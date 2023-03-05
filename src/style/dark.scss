@@ -1,0 +1,98 @@
+.app.dark {
+  background-color: #003366;
+  color: rgb(156, 156, 156);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #003366;
+
+    .tableCell {
+      color: #ffffff;
+    }
+  }
+
+  .home {
+    .listTitle {
+      color: #ffffff;
+    }
+  }
+
+  .navbar {
+    color: #ffffff;
+    border-color: #ffffff;
+
+    .search {
+      border-color: #333;
+    }
+  }
+
+  .sidebar {
+    background-color: #003366;
+    border-color: #ffffff;
+
+    .top {
+      .logo {
+        color: #ffffff;
+      }
+    }
+    hr {
+      border-color: #ffffff;
+    }
+
+    ul {
+      p {
+        color: #ffffff;
+      }
+      li {
+        .icon {
+          background-color: #ffffff;
+          border-radius: 3px;
+        }
+        span {
+          color: #ffffff;
+        }
+        &:hover {
+          background-color: #999;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: #ffffff;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+  }
+
+  .table {
+    .status {
+      &.Approved {
+        color: #ffffff;
+        background-color: green;
+      }
+      &.Pending {
+        color: #ffffff;
+        background-color: goldenrod;
+      }
+    }
+  }
+}
