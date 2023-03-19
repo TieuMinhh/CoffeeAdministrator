@@ -1,0 +1,144 @@
+.data-table {
+  height: 600px;
+  padding-top: 8px;
+  padding-left: 32px;
+
+  // .data-table-Title {
+  //   width: 100%;
+  //   font-size: 24px;
+  //   color: gray;
+  //   margin-bottom: 10px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+
+  //   .link {
+  //     text-decoration: none;
+  //     color: green;
+  //     font-size: 16px;
+  //     font-weight: 400;
+  //     border: 1px solid green;
+  //     padding: 5px;
+  //     border-radius: 5px;
+  //     cursor: pointer;
+  //   }
+  // }
+
+  .data-grid {
+    background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 8px;
+    border-radius: 5px;
+    width: 62px;
+    text-align: center;
+
+    &.submit {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.delivering {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: darkblue;
+    }
+    &.canceled {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 6px 6px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px solid rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+      &:hover {
+        background-color: #0066ff;
+        color: #fcfcfc;
+      }
+    }
+
+    .deleteButton {
+      padding: 6px 6px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px solid rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+      &:hover {
+        background-color: crimson;
+        color: #fcfcfc;
+      }
+    }
+  }
+
+  .cellDetail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.8;
+    text-decoration: underline;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .detail-order {
+    color: darkblue;
+  }
+}
+
+.btn-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.react-bootstrap-table td {
+  text-align: center !important; /* Can giữa nội dung của các ô dữ liệu */
+  vertical-align: middle; /* Can giữa theo chiều dọc */
+}
+
+.input-product {
+  margin-top: -4px;
+  margin-bottom: 8px;
+}
+
+.price-amount {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.price-total {
+  font-weight: 600;
+  margin-left: 4px;
+}

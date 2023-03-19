@@ -3,12 +3,13 @@ import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
 // import DataTable from "../../components/DataTable/DataTable";
-import OrderTable from "../../components/OrderTable/OrderTable";
+import UserTable from "../../components/UserTable/UserTable";
 import HeaderTitle from "../../components/HeaderTitle/HeaderTitle";
+// import Disable from "../../components/ModalYesNo";
 
-import "./Order.scss";
+import "./User.scss";
 
-const Order = () => {
+const User = () => {
   return (
     <div className="list">
       <Sidebar />
@@ -17,11 +18,12 @@ const Order = () => {
         {/* <div className="title-order">
           <p className="text-title">Các đơn đặt hàng</p>
         </div> */}
-        <HeaderTitle title="Tiểu Minh" subtitle="Quản lý đơn hàng" />
-        <OrderTable />
+        <HeaderTitle title="Tiểu Minh" subtitle="Quản lý tài khoản" />
+        {/* <Disable /> */}
+        <UserTable />
       </div>
     </div>
   );
 };
 
-export default Order;
+export default User;

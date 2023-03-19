@@ -1,4 +1,5 @@
-import "./sidebar.scss";
+import React from "react";
+import "./Sidebar.scss";
 // import DashboardIcon from "@mui/icons-material/Dashboard";
 // import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 // import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -15,19 +16,49 @@ import { FaLaughBeam, FaSignOutAlt } from "react-icons/fa";
 import { HiHome, HiCube, HiShoppingCart, HiUsers, HiCog } from "react-icons/hi";
 import { HiCircleStack } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import { DarkModeContext } from "../../context/darkModeContext";
-import { useContext } from "react";
+// import { DarkModeContext } from "../../context/darkModeContext";
+// import { useContext } from "react";
+import { Box, Typography } from "@mui/material";
+import AvatarImg from "../assets/image/avatar.jpg";
+// import Disable from "../ModalYesNo";
 
 const Sidebar = () => {
-  const { dispatch } = useContext(DarkModeContext);
+  // const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
           <FaLaughBeam className="smile-icon"></FaLaughBeam>
-          <span className="logo">Coffee Administrator</span>
+          <span className="logo">Café Administrator</span>
         </Link>
       </div>
+      <hr />
+      <Box mb="10px" mt="10px">
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <img
+            alt="profile-user"
+            width="90px"
+            height="90px"
+            src={AvatarImg}
+            style={{ cursor: "pointer", borderRadius: "5%" }}
+          />
+        </Box>
+        <Box textAlign="center" mt="8px" mb="8px">
+          <Typography
+            variant="h2"
+            // color={colors.grey[100]}
+            fontWeight="bold"
+            fontSize="20px"
+            sx={{ m: "6px 0 0 0" }}
+          >
+            小 明 先 生
+          </Typography>
+          <Typography variant="h5" color="#342E37" fontSize="20px" mt="8px">
+            Administrator
+          </Typography>
+        </Box>
+      </Box>
       <hr />
       <div className="center">
         <ul>
@@ -38,15 +69,18 @@ const Sidebar = () => {
               <span>Trang chủ</span>
             </li>
           </Link>
+
+          <hr />
+
           <p className="title">QUẢN LÝ</p>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/category" style={{ textDecoration: "none" }}>
             <li>
               <HiCircleStack className="icon"></HiCircleStack>
               <span>Quản lý danh mục</span>
             </li>
           </Link>
 
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/product" style={{ textDecoration: "none" }}>
             <li>
               <HiCube className="icon"></HiCube>
               <span>Quản lý sản phẩm</span>
@@ -60,12 +94,14 @@ const Sidebar = () => {
             </li>
           </Link>
 
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/user" style={{ textDecoration: "none" }}>
             <li>
               <HiUsers className="icon"></HiUsers>
               <span>Quản lý tài khoản</span>
             </li>
           </Link>
+
+          <hr />
 
           <p className="title">TÍNH NĂNG</p>
           <Link to="/setting" style={{ textDecoration: "none" }}>
@@ -115,19 +151,22 @@ const Sidebar = () => {
           </li> */}
         </ul>
       </div>
-      <div className="bottom">
+
+      <hr />
+
+      {/* <Disable /> */}
+      {/* <div className="bottom">
         <div
           className="colorOption"
           onClick={() => dispatch({ type: "LIGHT" })}
         ></div>
-        <p>Sáng</p>
-
         <div
           className="colorOption"
           onClick={() => dispatch({ type: "DARK" })}
         ></div>
-        <p>Tối</p>
-      </div>
+      </div> */}
+
+      <hr />
     </div>
   );
 };

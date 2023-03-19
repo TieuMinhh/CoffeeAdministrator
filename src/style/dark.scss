@@ -1,5 +1,5 @@
 .app.dark {
-  background-color: #003366;
+  background-color: #1f2a40;
   color: rgb(156, 156, 156);
 
   .chartGrid {
@@ -7,7 +7,7 @@
   }
 
   .table {
-    background-color: #003366;
+    background-color: #1f2a40;
 
     .tableCell {
       color: #ffffff;
@@ -15,13 +15,16 @@
   }
 
   .home {
+    .homeContainer {
+      background-color: #1f2a40;
+    }
     .listTitle {
       color: #ffffff;
     }
   }
 
   .navbar {
-    color: #ffffff;
+    background-color: #1f2a40;
     border-color: #ffffff;
 
     .search {
@@ -30,7 +33,7 @@
   }
 
   .sidebar {
-    background-color: #003366;
+    background-color: #1f2a40;
     border-color: #ffffff;
 
     .top {
@@ -65,16 +68,32 @@
     }
   }
 
-  .datatable {
-    .datagrid {
+  .data-table {
+    .data-grid {
+      background-color: #1f2a40;
       color: #ffffff;
-      border: none;
+      border: 1px solid #ffffff;
 
       .viewButton,
       .deleteButton,
       .cellWithStatus {
         color: #ffffff;
-        border: none;
+        border: 1px solid #ffffff;
+      }
+    }
+  }
+
+  .user-table {
+    .user-grid {
+      background-color: #1f2a40;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: #ffffff;
+        border: 1px solid #ffffff;
       }
     }
   }

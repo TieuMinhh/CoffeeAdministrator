@@ -5,9 +5,22 @@
   padding: 10px;
   -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-  border-radius: 10px;
+  border-radius: 8px;
   height: 100px;
-  background-color: #66ff00;
+  background-color: #fff;
+  border-left: 7px solid #6439ff;
+  // background-color: #66ff00;
+  // background: linear-gradient(-225deg, #e3fdf5 100%);
+  // background-color: rgba(150, 150, 255, 0.75);
+  &:nth-child(2) {
+    border-left: 7px solid #66ff00;
+  }
+  &:nth-child(3) {
+    border-left: 7px solid violet;
+  }
+  &:nth-child(4) {
+    border-left: 7px solid yellow;
+  }
 
   .left,
   .right {

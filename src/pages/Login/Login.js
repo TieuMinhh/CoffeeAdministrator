@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import { connect } from "react-redux";
 // import { push } from "connected-react-router";
 
@@ -26,10 +28,10 @@ class Login extends Component {
     };
   }
 
-  async componentDidMount() {
-    // let res = await axios.get('http://localhost:8081/api/v1/product')
-    // console.log(res.data.dataProduct);
-  }
+  // async componentDidMount() {
+  //   // let res = await axios.get('http://localhost:8081/api/v1/product')
+  //   // console.log(res.data.dataProduct);
+  // }
 
   handleOnChangeUsername = (event) => {
     this.setState({
@@ -44,6 +46,19 @@ class Login extends Component {
     });
   };
 
+  notifySubmit = () => {
+    console.log("có chạy mà");
+    toast.success("Ngài đã đăng nhập thành công", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   // handleOnClickLogin = async () => {
   //   this.props.userLoginSuccess("helo");
   //   //alert('Hello');
@@ -139,8 +154,9 @@ class Login extends Component {
                 id="login-submit"
                 className="submit"
                 type="button"
-                onClick={this.handleOnClickLogin}
+                onClick={this.notifySubmit}
               >
+                <ToastContainer />
                 Đăng Nhập
               </button>
             </Link>

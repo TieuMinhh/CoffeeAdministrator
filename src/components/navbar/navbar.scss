@@ -8,7 +8,7 @@
 
   .wrapper {
     width: 100%;
-    padding: 20px;
+    margin-left: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +28,7 @@
         background: transparent;
 
         &::placeholder {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -42,6 +42,7 @@
         align-items: center;
         margin-right: 20px;
         position: relative;
+        cursor: pointer;
 
         .icon {
           font-size: 24px;
@@ -68,6 +69,15 @@
           top: -5px;
           right: -5px;
         }
+      }
+      .hi {
+        margin-left: -12px;
+        font-weight: 500;
+      }
+      .admin-name {
+        margin-left: 6px;
+        font-weight: 700;
+        opacity: 0.9;
       }
     }
   }

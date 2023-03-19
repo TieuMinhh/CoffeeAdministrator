@@ -1,7 +1,7 @@
-.data-table {
+.user-table {
   height: 600px;
-  padding-top: 40px;
-  padding-left: 30px;
+  padding-top: 8px;
+  padding-left: 32px;
 
   // .data-table-Title {
   //   width: 100%;
@@ -23,6 +23,10 @@
   //     cursor: pointer;
   //   }
   // }
+
+  .data-grid {
+    background-color: #fcfcfc;
+  }
 
   .cellWithImg {
     display: flex;
@@ -58,28 +62,34 @@
   .cellAction {
     display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    // gap: 15px;
 
-    .viewButton {
-      padding: 6px 6px;
-      border-radius: 5px;
-      color: darkblue;
-      border: 1px solid rgba(0, 0, 139, 0.596);
-      cursor: pointer;
-    }
+    // .viewButton {
+    //   padding: 6px 6px;
+    //   border-radius: 5px;
+    //   color: darkblue;
+    //   border: 1px solid rgba(0, 0, 139, 0.6);
+    //   cursor: pointer;
+    // }
 
     .deleteButton {
+      border: #fcfcfc;
       padding: 6px 6px;
       border-radius: 5px;
       color: crimson;
       border: 1px solid rgba(220, 20, 60, 0.6);
       cursor: pointer;
+      &:hover {
+        background-color: crimson;
+        color: #fcfcfc;
+      }
     }
   }
 
-  .cellDetail {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
+  // .cellDetail {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 15px;
+  // }
 }

@@ -209,10 +209,10 @@
           content: "";
           position: absolute;
           right: -152px;
-          top: -14px;
+          top: 0;
           width: 550px;
-          height: 65%;
-          background-image: url(../../components/assets/image/coffee.jpg);
+          height: 100%;
+          background-image: url(../../components/assets/image/coffee.png);
           background-size: cover;
           transition: -webkit-transform 1.2s ease-in-out;
           transition: transform 1.2s ease-in-out,

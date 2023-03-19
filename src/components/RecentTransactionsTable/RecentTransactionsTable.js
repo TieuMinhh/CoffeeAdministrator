@@ -1,4 +1,4 @@
-import "./table.scss";
+import "./RecentTransactionsTable.scss";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const List = () => {
+const RecentTransactionsTable = () => {
   const rows = [
     {
       id: 1143155,
@@ -24,7 +24,7 @@ const List = () => {
       product: "Cà phê đá nóng hổi",
       img: "https://aeonmall-haiphong-lechan.com.vn/wp-content/uploads/2020/12/gourmet-guide-3_resize.jpg",
       customer: "黄 青 风",
-      date: "50",
+      date: "14-03",
       amount: 900,
       method: "Thiếu nợ hứa mai trả",
       status: "Pending",
@@ -59,10 +59,24 @@ const List = () => {
       method: "Đặt cho vui chứ không nhận",
       status: "Pending",
     },
+    {
+      id: 2342357,
+      product: "Cafe không hành ",
+      img: "https://aeonmall-haiphong-lechan.com.vn/wp-content/uploads/2020/12/gourmet-guide-3_resize.jpg",
+      customer: "陈 青 谦",
+      date: "30-2",
+      amount: 20,
+      method: "Đặt cho vui chứ tiền đâu mà nhận",
+      status: "Pending",
+    },
   ];
   return (
     <TableContainer component={Paper} className="table">
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table
+        sx={{ minWidth: 650 }}
+        aria-label="simple table"
+        backgroundColor="#fcfcfc"
+      >
         <TableHead>
           <TableRow>
             <TableCell className="tableCell">ID</TableCell>
@@ -99,4 +113,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default RecentTransactionsTable;
